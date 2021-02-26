@@ -1,0 +1,99 @@
+
+.sideNav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150vw;
+  height: 100vh;
+  .closeBtn {
+    padding: 1rem;
+    float: right;
+    cursor: pointer;
+  }
+  .sidebar {
+    float: right;
+    background-color: #fff;
+    min-height: 100vh;
+    width: 300px;
+    .navlinks{
+      margin: 30px 0 0 20px;
+      .nav-link-item {
+        cursor: pointer;
+        font-weight: 800;
+        font-size: 15px;
+        color: #444444;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      width: 100%;
+      .social-head {
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 30px;
+        padding: 10px 60px;
+        border-bottom: 1px solid #ccc;
+      }
+      .social-links {
+        display: flex;
+        flex-direction: row;
+        .s-links {
+          margin: 1rem;
+        }
+      }
+    }
+    .latest-articles {
+      display: flex;
+      flex-direction: column;
+      .heading {
+        margin: 30px 20px;
+        padding: 1rem 0;
+        font-weight: bold;
+        text-align: center;
+        // color: #444444;
+        text-transform: uppercase;
+        font-size: 15px;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}
+.active-enter {
+  background-color: #00000000;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 0.5s ease;
+}
+.active-enter-active {
+  opacity: 1;
+  background-color: #00000069;
+  transform: translateX(0);
+  transition: all 0.5s ease;
+}
+.active-enter-done {
+  opacity: 1;
+  background-color: #00000069;
+}
+.active-exit {
+  opacity: 1;
+  background-color: #00000069;
+  transform: translateX(0);
+  transition: all 0.5s ease;
+
+}
+.active-exit-active {
+  opacity: 0;
+  background-color: #00000000;
+  transform: translateX(200px);
+  transition: all 0.5s ease;
+
+}
