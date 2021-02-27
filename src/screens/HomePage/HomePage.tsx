@@ -12,6 +12,12 @@ const HomePage = () => {
       <div className="content">
         <div className="main">
           <BigCard />
+          <BigCard />
+          <BigCard />
+          <BigCard />
+          <BigCard />
+          <BigCard />
+          <BigCard />
         </div>
         <div className="sideSec"></div>
       </div>
