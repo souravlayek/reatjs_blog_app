@@ -41,6 +41,11 @@
   height: 100%;
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 769px) {
+  .bigcard .thumbnail {
+    width: 100%;
+  }
+}
 .bigcard .details {
   width: 55%;
   display: flex;
@@ -70,8 +75,8 @@
 }
 @media only screen and (max-width: 769px) {
   .bigcard .details .title {
-    font-size: 18px;
-    width: 80%;
+    font-size: 22px;
+    width: 90%;
     line-height: 22px;
   }
 }
@@ -88,8 +93,34 @@
   padding-left: 20px;
   color: #999999;
 }
+@media only screen and (max-width: 769px) {
+  .bigcard .details .authorandtime .time {
+    font-size: 12px;
+  }
+  .bigcard .details .authorandtime .author {
+    font-size: 12px;
+  }
+}
 .bigcard .details .desc {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 20px;
+}
+@media only screen and (max-width: 769px) {
+  .bigcard .details .desc {
+    display: none;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .bigcard .details {
+    width: 100%;
+  }
+  .bigcard .details > div {
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .bigcard {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=bigcard.css.map */

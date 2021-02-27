@@ -13,8 +13,18 @@
 .homepage .content .main img {
   width: 100%;
 }
+@media only screen and (max-width: 769px) {
+  .homepage .content .main {
+    width: 90%;
+  }
+}
 .homepage .content .sideSec {
   background-color: red;
   width: 20%;
   height: 20px;
+}
+@media only screen and (max-width: 769px) {
+  .homepage .content .sideSec {
+    display: none;
+  }
 }/*# sourceMappingURL=homepage.css.map */
