@@ -1,0 +1,42 @@
+.slider {
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+  position: relative;
+  & > .button {
+    position: absolute;
+    transition: all 0.5s ease;
+    top: 50%;
+    background-color: #ffffff41;
+    transform: translateY(-50%);
+    .leftarrow, .rightarrow {
+    transition: all 0.5s ease;
+      color: white;
+    }
+
+    @media only screen and (max-width: 769px){
+      display: none;
+    }
+    &.left {
+      transform: translateY(-50%) rotate(180deg);
+      padding: 0.3rem;
+      left: 10px;
+      &:hover .leftarrow{
+        color: black;
+      }
+    }
+    &.right {
+      padding: 0.3rem;
+      right: 10px;
+      &:hover .rightarrow{
+        color: black;
+      }
+    }
+    &:hover {
+    background-color: #ffffff;
+    }
+  }
+  @media only screen and (max-width: 769px){
+    width: 90%;
+  }
+}

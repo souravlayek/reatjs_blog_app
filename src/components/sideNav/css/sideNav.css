@@ -6,24 +6,20 @@
   width: 150vw;
   height: 100vh;
 }
-
 .sideNav .closeBtn {
   padding: 1rem;
   float: right;
   cursor: pointer;
 }
-
 .sideNav .sidebar {
   float: right;
   background-color: #fff;
   min-height: 100vh;
   width: 300px;
 }
-
 .sideNav .sidebar .navlinks {
   margin: 30px 0 0 20px;
 }
-
 .sideNav .sidebar .navlinks .nav-link-item {
   cursor: pointer;
   font-weight: 800;
@@ -34,21 +30,12 @@
   padding: 1rem 1rem;
   border-bottom: 1px solid #ccc;
 }
-
 .sideNav .sidebar .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
-
 .sideNav .sidebar .social .social-head {
   font-size: 15px;
   font-weight: bold;
@@ -57,31 +44,17 @@
   padding: 10px 60px;
   border-bottom: 1px solid #ccc;
 }
-
 .sideNav .sidebar .social .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .sideNav .sidebar .social .social-links .s-links {
   margin: 1rem;
 }
-
 .sideNav .sidebar .latest-articles {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .sideNav .sidebar .latest-articles .heading {
   margin: 30px 20px;
   padding: 1rem 0;
@@ -95,18 +68,14 @@
 .active-enter {
   background-color: #00000000;
   opacity: 0;
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px);
-  -webkit-transition: all 0.5s ease;
+  transform: translateX(200px);
   transition: all 0.5s ease;
 }
 
 .active-enter-active {
   opacity: 1;
   background-color: #00000069;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all 0.5s ease;
+  transform: translateX(0);
   transition: all 0.5s ease;
 }
 
@@ -118,18 +87,13 @@
 .active-exit {
   opacity: 1;
   background-color: #00000069;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all 0.5s ease;
+  transform: translateX(0);
   transition: all 0.5s ease;
 }
 
 .active-exit-active {
   opacity: 0;
   background-color: #00000000;
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px);
-  -webkit-transition: all 0.5s ease;
+  transform: translateX(200px);
   transition: all 0.5s ease;
-}
-/*# sourceMappingURL=sideNav.css.map */
+}/*# sourceMappingURL=sideNav.css.map */
