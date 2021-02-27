@@ -5,6 +5,7 @@
   position: relative;
 }
 .slider > .button {
+  z-index: 1;
   position: absolute;
   transition: all 0.5s ease;
   top: 50%;
