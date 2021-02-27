@@ -1,0 +1,19 @@
+.homepage .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.homepage .content .main {
+  width: 65%;
+}
+.homepage .content .main img {
+  width: 100%;
+}
+.homepage .content .sideSec {
+  background-color: red;
+  width: 15%;
+  height: 20px;
+}/*# sourceMappingURL=homepage.css.map */

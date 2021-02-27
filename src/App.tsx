@@ -1,13 +1,12 @@
 import React from 'react'
 import './assets/css/utility.css'
-import NavSection from './layouts/navSection/NavSection'
-import Slider from './layouts/slider/Slider'
+import HomePage from './screens/HomePage/HomePage'
+
 
 const App:React.FC = () => {
   return (
     <div>
-            <NavSection />
-            <Slider />
+      <HomePage />
 
     </div>
   )
