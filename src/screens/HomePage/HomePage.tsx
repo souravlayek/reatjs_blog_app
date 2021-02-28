@@ -1,6 +1,7 @@
 import React from "react";
 import BigCard from "../../components/bigCard/BigCard";
 import NavSection from "../../layouts/navSection/NavSection";
+import SideBar from "../../layouts/sideBar/SideBar";
 import Slider from "../../layouts/slider/Slider";
 import "./css/homepage.css";
 
@@ -19,7 +20,9 @@ const HomePage = () => {
           <BigCard />
           <BigCard />
         </div>
-        <div className="sideSec"></div>
+        <div className="sideSec">
+          <SideBar />
+        </div>
       </div>
     </div>
   );

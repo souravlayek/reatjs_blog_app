@@ -4,7 +4,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
     .main {
@@ -17,9 +16,10 @@
       }
     }
     .sideSec {
-      background-color: red;
+      // background-color: red;
       width: 20%;
-      height: 20px;
+      box-sizing: border-box;
+      padding-left: 30px;
       @media only screen and (max-width: 769px){
         display: none;
       }

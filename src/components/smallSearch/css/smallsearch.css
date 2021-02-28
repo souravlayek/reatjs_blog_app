@@ -1,0 +1,18 @@
+.smallsearch {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.smallsearch form {
+  margin: 0;
+  width: 100%;
+}
+.smallsearch form input {
+  box-sizing: border-box;
+  width: 90%;
+  height: 40px;
+  padding: 0.1rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=smallsearch.css.map */

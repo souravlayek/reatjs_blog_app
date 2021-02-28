@@ -1,0 +1,34 @@
+.newsletter {
+  .heading{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .emailField {
+      box-sizing: border-box;
+      height: 45px;
+      border-radius: 2px;
+      padding: 0 1.2rem;
+      margin-bottom: 15px;
+      border: none;
+      outline: none;
+      background-color: #dddddd;
+    }
+    .submitBtn {
+      height: 45px;
+      border-radius: 2px;
+      background-color: black;
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      border: none;
+      outline: none;
+    }
+  }
+}
