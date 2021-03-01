@@ -17,6 +17,38 @@
     width: 90%;
   }
 }
+.homepage .content .main .pagination {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 70px auto;
+}
+.homepage .content .main .pagination .dots {
+  color: #ccc;
+}
+.homepage .content .main .pagination .next {
+  text-transform: uppercase;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.homepage .content .main .pagination .next svg {
+  transition: all 0.3s ease-in-out;
+}
+.homepage .content .main .pagination .next:hover svg {
+  transform: translateX(5px);
+}
+.homepage .content .main .pagination .pageNum.active {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}
 .homepage .content .sideSec {
   width: 20%;
   box-sizing: border-box;

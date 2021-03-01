@@ -14,6 +14,38 @@
       @media only screen and (max-width: 769px){
         width: 90%;
       }
+      .pagination{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 70px auto;
+        .dots{
+          color: #ccc;
+        }
+        .next {
+          text-transform: uppercase;
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          svg {
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover svg {
+            transform: translateX(5px);
+          }
+        }
+        .pageNum.active{
+          height: 50px;
+          width: 50px;
+          border: 1px solid #ccc;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ccc;
+        }
+      }
     }
     .sideSec {
       // background-color: red;

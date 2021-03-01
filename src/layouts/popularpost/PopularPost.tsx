@@ -14,9 +14,6 @@ const PopularPost = (props: Props) => {
         <SmallCard />
         <SmallCard />
         <SmallCard />
-        <SmallCard />
-        <SmallCard />
-        <SmallCard />
       </div>
     </div>
   );

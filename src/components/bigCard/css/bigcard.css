@@ -114,7 +114,9 @@
 }
 @media only screen and (max-width: 769px) {
   .bigcard .details {
-    width: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .bigcard .details > div {
     padding: 5px 0;
