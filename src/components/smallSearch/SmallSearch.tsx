@@ -1,10 +1,13 @@
 import React, { useState, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
+import { useHistory } from "react-router-dom";
 import "./css/smallsearch.css";
+
 interface Props {}
 
 const SmallSearch = (props: Props) => {
   const [searchText, setSearchText] = useState<string>("");
+  const history = useHistory();
   const form = useRef<any>(null);
   const handleSubmit = (
     e:
@@ -12,7 +15,7 @@ const SmallSearch = (props: Props) => {
       | React.MouseEvent<SVGElement, MouseEvent>
   ) => {
     e.preventDefault();
-    console.log(searchText);
+    history.push("/s?q=" + searchText);
     setSearchText("");
   };
   return (

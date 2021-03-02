@@ -1,12 +1,17 @@
 import React from "react";
 import "./assets/css/utility.css";
 import HomePage from "./screens/HomePage/HomePage";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./Route";
+import NavSection from "./layouts/navSection/NavSection";
 
 const App: React.FC = () => {
   return (
-    <>
-      <HomePage />
-    </>
+    <Router>
+      <NavSection />
+
+      <Routes />
+    </Router>
   );
 };
 

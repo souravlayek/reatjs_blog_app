@@ -24,7 +24,6 @@ const SideNav = (props: Props) => {
   return (
     <CSSTransition
       in={props.openStatus}
-      out={props.openStatus}
       onEntering={() =>
         ((document.querySelector("body") as HTMLElement).style.overflow =
           "hidden")

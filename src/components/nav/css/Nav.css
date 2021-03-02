@@ -9,6 +9,7 @@
 }
 .nav .logo {
   width: 200px;
+  cursor: pointer;
 }
 .nav .logo img {
   width: 100%;
