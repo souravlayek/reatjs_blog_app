@@ -1,11 +1,15 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import BlogDetailsScreen from "./screens/blogDetailsScreen/BlogDetailsScreen";
+import CatagoryScreen from "./screens/catagoryScreen/CatagoryScreen";
 import HomePage from "./screens/HomePage/HomePage";
 import SearchScreen from "./screens/searchScreen/SearchScreen";
 const Routes = () => {
   return (
     <Switch>
+      <Route exact path="/category/:cat">
+        <CatagoryScreen />
+      </Route>
       <Route exact path="/blog/:blogSlug">
         <BlogDetailsScreen />
       </Route>

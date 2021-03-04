@@ -1,0 +1,102 @@
+.categoryScreen .content {
+  position: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.categoryScreen .content .main {
+  width: 60%;
+}
+.categoryScreen .content .main .catagorySection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.categoryScreen .content .main .catagorySection .heading {
+  font-size: 38px;
+  font-weight: bold;
+}
+.categoryScreen .content .main .catagorySection .catList {
+  width: 60%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.categoryScreen .content .main .catagorySection .catList .catItem {
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+}
+.categoryScreen .content .main .catagorySection .catList .catItem.active {
+  color: #ccc;
+}
+@media only screen and (max-width: 769px) {
+  .categoryScreen .content .main .catagorySection .catList {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+}
+.categoryScreen .content .main img {
+  width: 100%;
+}
+@media only screen and (max-width: 769px) {
+  .categoryScreen .content .main {
+    width: 90%;
+  }
+}
+.categoryScreen .content .main .pagination {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 70px auto;
+}
+@media only screen and (max-width: 769px) {
+  .categoryScreen .content .main .pagination {
+    width: 80%;
+  }
+}
+.categoryScreen .content .main .pagination .dots {
+  color: #ccc;
+}
+.categoryScreen .content .main .pagination .next {
+  text-transform: uppercase;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.categoryScreen .content .main .pagination .next svg {
+  transition: all 0.3s ease-in-out;
+}
+.categoryScreen .content .main .pagination .next:hover svg {
+  transform: translateX(5px);
+}
+.categoryScreen .content .main .pagination .pageNum.active {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}
+.categoryScreen .content .sideSec {
+  width: 20%;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+@media only screen and (max-width: 769px) {
+  .categoryScreen .content .sideSec {
+    display: none;
+  }
+}/*# sourceMappingURL=catagoryscreen.css.map */

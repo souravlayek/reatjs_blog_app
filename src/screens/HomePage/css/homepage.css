@@ -24,6 +24,11 @@
   align-items: center;
   margin: 70px auto;
 }
+@media only screen and (max-width: 769px) {
+  .homepage .content .main .pagination {
+    width: 80%;
+  }
+}
 .homepage .content .main .pagination .dots {
   color: #ccc;
 }

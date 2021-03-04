@@ -1,4 +1,4 @@
-.homepage {
+.categoryScreen {
   .content{
     position: inherit;
     width: 100%;
@@ -8,6 +8,41 @@
     margin-bottom: 30px;
     .main {
       width: 60%;
+      .catagorySection{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        .heading{
+          font-size: 38px;
+          font-weight: bold;
+        }
+        .catList {
+          width: 60%;
+          margin-top: 30px;
+          display: flex;
+          justify-content: space-between;
+          .catItem{
+            text-transform: uppercase;
+            line-height: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 5px;
+            font-size: 12px;
+            border-bottom: 1px solid #ccc;
+          }
+          .catItem.active{
+            color: #ccc;
+          }
+          @media only screen and (max-width: 769px){
+          width: 80%;
+            flex-wrap: wrap;
+          }
+        }
+
+      }
       img {
         width: 100%;
       }
