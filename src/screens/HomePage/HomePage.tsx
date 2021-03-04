@@ -47,7 +47,6 @@ const HomePage = () => {
           <SideBar />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

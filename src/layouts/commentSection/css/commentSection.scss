@@ -1,0 +1,73 @@
+@import "../../../assets/css/constant.scss";
+.comment-section {
+  .no-comment{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .cmntItem {
+    display: flex;
+    flex-direction: column;
+  border-bottom: 1px solid #ccc;
+    .replyBtn{
+      cursor: pointer;
+      align-self: flex-end;
+      background-color: black;
+      width: fit-content;
+      color: white;
+      padding: 0.5rem 1rem;
+    }
+  }
+  .commentForm{
+    margin-top: 40px;
+    .heading {
+      font-size: 22px;
+      font-weight: bold;
+      .smallDevider {
+        margin-left: 20px;
+        margin-right: 0;
+      }
+
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: $regularFont;
+      input{
+      font-family: $regularFont;
+
+        border: none;
+        outline: none;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #e4e4e4;
+        padding: 0 10px;
+        margin: 15px 0;
+      }
+      textarea {
+      font-family: $regularFont;
+
+        border: none;
+        outline: none;
+        height: 150px;
+        border-radius: 5px;
+        background-color: #e4e4e4;
+        padding: 10px 15px;
+
+      }
+      button {
+        border: none;
+        outline: none;
+        width: fit-content;
+        background-color: black;
+        margin: 10px 0;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        padding: 1rem 1.5rem;
+      }
+    }
+  }
+}

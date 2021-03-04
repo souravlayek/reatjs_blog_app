@@ -19,12 +19,29 @@ const BlogContent = (props: Props) => {
   const blogbody = useRef<any>(null);
   const stickyShare = useRef<any>(null);
   const webshare = useRef<any>(null);
+  const webshare2 = useRef<any>(null);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (blogbody !== null) {
         if (blogbody.current !== null) {
           if (blogbody.current.offsetTop <= window.scrollY) {
+            if (
+              blogbody.current.offsetTop + blogbody.current.clientHeight <=
+              window.scrollY
+            ) {
+              if (stickyShare !== null) {
+                stickyShare.current.style.position = "fixed";
+                stickyShare.current.style.top = "10px";
+                stickyShare.current.style.transform = `translateY(-${
+                  window.scrollY -
+                  (blogbody.current.offsetTop + blogbody.current.clientHeight) +
+                  150
+                }px)`;
+              }
+            } else {
+              stickyShare.current.style.transform = `translateY(0px)`;
+            }
             if (stickyShare !== null) {
               stickyShare.current.style.position = "fixed";
               stickyShare.current.style.top = "10px";
@@ -37,15 +54,17 @@ const BlogContent = (props: Props) => {
     });
   }, [blogbody]);
   const shareHandler = () => {
-    if (
-      webshare.current.style.display === "inline-block" ||
-      webshare.current.style.display === "flex"
-    ) {
+    if (webshare.current.style.display === "inline-block") {
       webshare.current.style.display = "none";
-    } else if (window.innerWidth <= 769) {
-      webshare.current.style.display = "flex";
     } else {
       webshare.current.style.display = "inline-block";
+    }
+  };
+  const mobShareHandler = () => {
+    if (webshare2.current.style.display === "flex") {
+      webshare2.current.style.display = "none";
+    } else {
+      webshare2.current.style.display = "flex";
     }
   };
   const updateHandler = () => {
@@ -144,11 +163,11 @@ const BlogContent = (props: Props) => {
               <AiFillHeart />
               <div className="count">200</div>
             </div>
-            <div onClick={shareHandler} className="shareBtn share">
+            <div onClick={mobShareHandler} className="shareBtn share">
               <FaShare />
             </div>
           </div>
-          <div ref={webshare} className="webshare">
+          <div ref={webshare2} className="webshare">
             <div className="shareBtn facebook">
               <FaFacebookF />
             </div>

@@ -1,0 +1,80 @@
+.relatedBlog {
+  margin-top: 10px;
+  min-width: calc(calc(100vw * 0.6 / 3) - 40px);
+  max-width: calc(calc(100vw * 0.6 / 3) - 40px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.relatedBlog .thumbnail {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.relatedBlog .thumbnail .view-more {
+  position: absolute;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid white;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  transition-delay: 1s;
+  transition: all 0.5s ease;
+}
+.relatedBlog .thumbnail:hover img {
+  transform: scale(1.02);
+  filter: brightness(70%);
+}
+.relatedBlog .thumbnail:hover .view-more {
+  opacity: 1;
+}
+.relatedBlog .thumbnail img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.relatedBlog .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.relatedBlog .details .title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+@media only screen and (max-width: 769px) {
+  .relatedBlog .details .title {
+    font-size: 18px;
+    width: 90%;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .relatedBlog .details {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .relatedBlog .details > div {
+    padding: 5px 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=relatedblog.css.map */

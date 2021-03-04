@@ -1,9 +1,9 @@
 import React from "react";
 import "./assets/css/utility.css";
-import HomePage from "./screens/HomePage/HomePage";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Route";
 import NavSection from "./layouts/navSection/NavSection";
+import Footer from "./components/footer/Footer";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +11,7 @@ const App: React.FC = () => {
       <NavSection />
 
       <Routes />
+      <Footer />
     </Router>
   );
 };
