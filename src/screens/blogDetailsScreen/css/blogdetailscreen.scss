@@ -1,0 +1,18 @@
+.blogDetailsScreen{
+  display: flex;
+  justify-content: center;
+  .main{
+    width: 60%;
+    @media only screen and (max-width: 769px){
+      width: 100%;
+    }
+  }
+  .side{
+    box-sizing: border-box;
+    padding-left: 30px;
+    width: 20%;
+    @media only screen and (max-width: 769px){
+      display: none;
+    }
+  }
+}

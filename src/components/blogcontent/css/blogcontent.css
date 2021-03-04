@@ -1,0 +1,357 @@
+.blogContent .header .tags {
+  text-align: center;
+  color: #c2c2c2;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.blogContent .header .tags span {
+  color: black;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+@media only screen and (max-width: 769px) {
+  .blogContent .header .tags {
+    font-size: 12px;
+  }
+}
+.blogContent .header .title {
+  margin: 0 auto;
+  width: 85%;
+  text-align: center;
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+@media only screen and (max-width: 769px) {
+  .blogContent .header .title {
+    font-size: 22px;
+    width: 90%;
+    line-height: 22px;
+  }
+}
+.blogContent .header .authorandtime {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogContent .header .authorandtime .time {
+  font-size: 14px;
+  color: #999999;
+}
+.blogContent .header .authorandtime .author {
+  font-size: 14px;
+  padding-left: 20px;
+  color: #999999;
+}
+@media only screen and (max-width: 769px) {
+  .blogContent .header .authorandtime .time {
+    font-size: 12px;
+  }
+  .blogContent .header .authorandtime .author {
+    font-size: 12px;
+  }
+}
+.blogContent .header > div {
+  padding: 10px 0;
+}
+.blogContent .header .mobShareHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888888;
+}
+.blogContent .header .mobShareHead .shareBtn {
+  padding-left: 20px;
+}
+.blogContent .header .mobShareHead .shareBtn svg {
+  color: #b4b4b4;
+}
+.blogContent .thumbnail {
+  margin-top: 20px;
+}
+.blogContent .thumbnail img {
+  width: 100%;
+}
+.blogContent .body {
+  display: flex;
+}
+.blogContent .body .socialshare {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 10%;
+}
+.blogContent .body .socialshare .sticky {
+  margin-top: 40px;
+}
+.blogContent .body .socialshare .sticky .shareBtn {
+  cursor: pointer;
+  margin-top: 10px;
+  height: 60px;
+  width: 60px;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.blogContent .body .socialshare .sticky .shareBtn .count {
+  padding-top: 5px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ccc;
+}
+.blogContent .body .socialshare .sticky .shareBtn svg {
+  color: #ccc;
+  transition: all 0.5s ease;
+}
+.blogContent .body .socialshare .sticky .like:hover {
+  background-color: #e64545;
+  border: 2px solid #e64545;
+}
+.blogContent .body .socialshare .sticky .like:hover svg {
+  color: #fff;
+}
+.blogContent .body .socialshare .sticky .share:hover {
+  background-color: #a0f1ff;
+  border: 2px solid #a0f1ff;
+}
+.blogContent .body .socialshare .sticky .share:hover svg {
+  color: #fff;
+}
+.blogContent .body .socialshare .sticky .facebook:hover {
+  background-color: #4267B2;
+  border: 2px solid #4267B2;
+}
+.blogContent .body .socialshare .sticky .facebook:hover svg {
+  color: #fff;
+}
+.blogContent .body .socialshare .sticky .twitter:hover {
+  background-color: #1DA1F2;
+  border: 2px solid #1DA1F2;
+}
+.blogContent .body .socialshare .sticky .twitter:hover svg {
+  color: #fff;
+}
+.blogContent .body .socialshare .sticky .copylink:hover {
+  background-color: #8ecfd1;
+  border: 2px solid #8ecfd1;
+}
+.blogContent .body .socialshare .sticky .copylink:hover svg {
+  color: #fff;
+}
+.blogContent .body .socialshare .sticky .copylink svg {
+  transition-delay: 1s;
+}
+.blogContent .body .socialshare .sticky .copylink button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+.blogContent .body .socialshare .sticky .copylink .copy-enter,
+.blogContent .body .socialshare .sticky .copylink .copy-enter-active {
+  opacity: 1;
+}
+.blogContent .body .socialshare .sticky .copylink .copy-entered {
+  opacity: 1;
+}
+.blogContent .body .socialshare .sticky .copylink .copy-exit-active, .blogContent .body .socialshare .sticky .copylink .copy-exit-done {
+  opacity: 1;
+}
+.blogContent .body .socialshare .sticky .copylink.active {
+  background-color: #5ecf5e;
+  border: 2px solid #5ecf5e;
+}
+.blogContent .body .socialshare .sticky .copylink.active svg {
+  color: #fff;
+}
+.blogContent .body .socialshare .sticky .webshare {
+  display: none;
+}
+@media only screen and (max-width: 769px) {
+  .blogContent .body .socialshare {
+    display: none;
+  }
+}
+.blogContent .body .bodyContent {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 80%;
+}
+.blogContent .body .bodyContent p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #131313;
+}
+.blogContent .body .bodyContent h1, .blogContent .body .bodyContent h2, .blogContent .body .bodyContent h3, .blogContent .body .bodyContent h4, .blogContent .body .bodyContent h5, .blogContent .body .bodyContent h6 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: #161616;
+}
+.blogContent .body .bodyContent a {
+  color: #e64545;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blogContent .body .bodyContent a:hover {
+  color: #888;
+}
+.blogContent .body .bodyContent ul {
+  list-style-type: circle;
+  color: #131313;
+}
+.blogContent .body .bodyContent ul li {
+  line-height: 30px;
+}
+.blogContent .body .bodyContent img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 769px) {
+  .blogContent .body .bodyContent {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+.blogContent .mobshare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blogContent .mobshare .shareText {
+  text-align: center;
+  font-size: 20px;
+}
+.blogContent .mobshare .buttons {
+  display: flex;
+}
+.blogContent .mobshare .buttons .shareBtn {
+  cursor: pointer;
+  margin-top: 10px;
+  margin: 20px 10px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.blogContent .mobshare .buttons .shareBtn .count {
+  padding-top: 1px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ccc;
+}
+.blogContent .mobshare .buttons .shareBtn svg {
+  color: #ccc;
+  transition: all 0.5s ease;
+}
+.blogContent .mobshare .buttons .share:hover {
+  background-color: #a0f1ff;
+  border: 2px solid #a0f1ff;
+}
+.blogContent .mobshare .buttons .share:hover svg {
+  color: #fff;
+}
+.blogContent .mobshare .buttons .like:hover, .blogContent .mobshare .buttons .like:focus {
+  background-color: #e64545;
+  border: 2px solid #e64545;
+}
+.blogContent .mobshare .buttons .like:hover svg, .blogContent .mobshare .buttons .like:focus svg {
+  color: #fff;
+}
+.blogContent .mobshare .webshare {
+  display: flex;
+  flex-direction: row;
+}
+.blogContent .mobshare .webshare .shareBtn {
+  cursor: pointer;
+  margin-top: 10px;
+  margin: 20px 10px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.blogContent .mobshare .webshare .shareBtn .count {
+  padding-top: 1px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ccc;
+}
+.blogContent .mobshare .webshare .shareBtn svg {
+  color: #ccc;
+  transition: all 0.5s ease;
+}
+.blogContent .mobshare .webshare .facebook:hover {
+  background-color: #4267B2;
+  border: 2px solid #4267B2;
+}
+.blogContent .mobshare .webshare .facebook:hover svg {
+  color: #fff;
+}
+.blogContent .mobshare .webshare .twitter:hover {
+  background-color: #1DA1F2;
+  border: 2px solid #1DA1F2;
+}
+.blogContent .mobshare .webshare .twitter:hover svg {
+  color: #fff;
+}
+.blogContent .mobshare .webshare .copylink:hover {
+  background-color: #8ecfd1;
+  border: 2px solid #8ecfd1;
+}
+.blogContent .mobshare .webshare .copylink:hover svg {
+  color: #fff;
+}
+.blogContent .mobshare .webshare .copylink svg {
+  transition-delay: 1s;
+}
+.blogContent .mobshare .webshare .copylink button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+.blogContent .mobshare .webshare .copylink .copy-enter,
+.blogContent .mobshare .webshare .copylink .copy-enter-active {
+  opacity: 1;
+}
+.blogContent .mobshare .webshare .copylink .copy-entered {
+  opacity: 1;
+}
+.blogContent .mobshare .webshare .copylink .copy-exit-active, .blogContent .mobshare .webshare .copylink .copy-exit-done {
+  opacity: 1;
+}
+.blogContent .mobshare .webshare .copylink.active {
+  background-color: #5ecf5e;
+  border: 2px solid #5ecf5e;
+}
+.blogContent .mobshare .webshare .copylink.active svg {
+  color: #fff;
+}
+.blogContent .mobshare .webshare {
+  display: none;
+}/*# sourceMappingURL=blogcontent.css.map */

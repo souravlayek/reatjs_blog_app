@@ -126,4 +126,8 @@
   .bigcard {
     flex-direction: column;
   }
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=bigcard.css.map */

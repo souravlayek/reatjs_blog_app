@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdNavigateNext } from "react-icons/md";
 import BigCard from "../../components/bigCard/BigCard";
 import Footer from "../../components/footer/Footer";
@@ -8,6 +8,9 @@ import Slider from "../../layouts/slider/Slider";
 import "./css/homepage.css";
 
 const HomePage = () => {
+  useEffect(() => {
+    (document.querySelector("body") as Element).scrollIntoView();
+  }, []);
   return (
     <div className="homepage">
       {/* <NavSection /> */}
