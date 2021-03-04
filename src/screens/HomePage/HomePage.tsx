@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { MdNavigateNext } from "react-icons/md";
 import BigCard from "../../components/bigCard/BigCard";
-import Footer from "../../components/footer/Footer";
-// import NavSection from "../../layouts/navSection/NavSection";
 import SideBar from "../../layouts/sideBar/SideBar";
 import Slider from "../../layouts/slider/Slider";
 import "./css/homepage.css";

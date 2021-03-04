@@ -8,9 +8,9 @@ interface Props {}
 
 const BlogDetailsScreen = (props: Props) => {
   const blogScreen = useRef<any>(null);
-  // useEffect(() => {
-  //   (document.querySelector("body") as Element).scrollIntoView();
-  // }, []);
+  useEffect(() => {
+    (document.querySelector("body") as Element).scrollIntoView();
+  }, []);
   return (
     <div ref={blogScreen} className="blogDetailsScreen">
       <div className="main">
